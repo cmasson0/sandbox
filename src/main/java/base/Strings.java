@@ -1,8 +1,8 @@
 package base;
 
-public class Strings {
+class Strings {
 
-    public static String returnEmptyString() {
+    static String returnEmptyString() {
         return "";
     }
 
