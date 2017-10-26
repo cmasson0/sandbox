@@ -30,6 +30,4 @@ class Streams {
                 .collect(Collectors.groupingBy(p -> p.gender,
                         Collectors.summarizingDouble(p -> p.weight)));
     }
-
-
 }

@@ -15,23 +15,21 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StreamsTest {
 
-    private Collection<Person> persons;
+    final private Collection<Person> persons = List.of(new Person("john", MALE, 72.3 ),
+            new Person("Mike", MALE, 81.6 ),
+            new Person("Alex", MALE, 68.2 ),
+            new Person("Aline", FEMALE, 64.7 ),
+            new Person("Alice", FEMALE, 59.1 ),
+            new Person("Margo", FEMALE, 74.3 ),
+            new Person("Daria", FEMALE, 65.6 )
+    );
 
     @BeforeEach
     void setUp() {
-        persons = List.of(new Person("john", MALE, 72.3 ),
-                new Person("Mike", MALE, 81.6 ),
-                new Person("Alex", MALE, 68.2 ),
-                new Person("Aline", FEMALE, 64.7 ),
-                new Person("Alice", FEMALE, 59.1 ),
-                new Person("Margo", FEMALE, 74.3 ),
-                new Person("Daria", FEMALE, 65.6 )
-                );
     }
 
     @AfterEach
     void tearDown() {
-        persons = null;
     }
 
     @Test
